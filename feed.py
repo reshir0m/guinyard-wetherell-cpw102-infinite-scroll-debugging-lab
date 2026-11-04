@@ -37,7 +37,9 @@ while True:
 
     if action == "n":
         break
-
     page = 0
+    num_page_value = page + 3
+    
+    print(f"Debug: Page Value {page}")
 
 print("Session ended.")
