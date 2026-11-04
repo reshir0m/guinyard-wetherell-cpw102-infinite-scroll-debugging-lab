@@ -13,6 +13,10 @@ Include relevant inputs, code changes, or output so someone else can follow your
 
 Use numbered entries or timestamps. Use Markdown formatting to make it easy to read.
 
+[x] Error 1: Same 3 posts instead of new posts
+[] Error 2: Program keeps looping user endlessly.
+[] Error 3: User inputs anything except "y" or "n"
+
 Processes: 
 - run the program
 - reproduced user's 1st error
@@ -20,8 +24,11 @@ Processes:
 - reproduced user's 3rd error
 
 - focus on the for loop
-- commented out second page = 0
+- trying rewritten if action to an elif statement
+- trying page = page + 1 (works: progresses posts instead of loopng first 3.)
 
+- commented out second page = 0
+- uncommented second page = 0
 
 ## Resolution
 

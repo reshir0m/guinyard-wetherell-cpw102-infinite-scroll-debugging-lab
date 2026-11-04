@@ -24,6 +24,7 @@ feed = []
 while True:
     new_posts = fetch_page(page)
 
+
     for post in new_posts:
         feed.append(post)
 
@@ -35,10 +36,16 @@ while True:
 
     action = input("\nScroll? (y/n): ")
 
-    if action == "n":
+
+    
+    if action == "y":
+        page = page + 1
+    elif action == "n":
         break
-    page = 0
-    num_page_value = page + 3
+   
+    
+
+    
     
     print(f"Debug: Page Value {page}")
 
