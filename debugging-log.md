@@ -14,8 +14,8 @@ Include relevant inputs, code changes, or output so someone else can follow your
 Use numbered entries or timestamps. Use Markdown formatting to make it easy to read.
 
 [x] Error 1: Same 3 posts instead of new posts
-[] Error 2: Program keeps looping user endlessly.
-[] Error 3: User inputs anything except "y" or "n"
+[x] Error 2: Program keeps looping user endlessly.
+[x] Error 3: User inputs anything except "y" or "n"
 
 Processes: 
 - run the program
@@ -34,3 +34,7 @@ Processes:
 
 Explain the causes, your repairs, and the evidence that verifies them. Identify
 anything still uncertain or unresolved. Make code changes in `feed.py`.
+
+CAUSES:
+ 1. Same 3 posts on every scroll. The program kept a page numbter to know which posts o show next. When the user would input "y", the steps that move to the next page would get skipped and keep showing page 1.
+
