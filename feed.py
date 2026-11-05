@@ -34,19 +34,16 @@ while True:
 
     print(f"\nLoaded {len(feed)} posts")
 
-    action = input("\nScroll? (y/n): ")
+    action = input("\nScroll? (y/n): ").strip().lower
 
-
+    while action != "y" and action != "n":
+        print("Please enter y or n")
+        action = input("\nScroll? (y/n): ").strip().lower()
+            
     
-    if action == "y":
-        page = page + 1
-    elif action == "n":
+    if action == "n":
         break
    
-    
-
-    
-    
-    print(f"Debug: Page Value {page}")
+    page = page + 1
 
 print("Session ended.")
